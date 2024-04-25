@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  <div class="main h-screen w-full bg-black flex justify-center items-center font-mono">
+    <div class="container bg-gray-100 min-h-fit max-w-[60vh] p-10 rounded-xl flex flex-col justify-between">
+         <h2 class="font-mono text-xl  ">TO-DO  LIST <i class="ri-sticky-note-fill"></i></h2>
+         <div class="row mt-8 rounded-3xl bg-slate-300  flex items-center justify-between ">
+          <input class="input-text outline-none bg-transparent font-bold px-5" type="text" placeholder="Add your task..">
+          <button class="px-10 py-2 rounded-3xl outline-none bg-black text-white" onclick="addtask()">ADD</button>
+         </div>
+         <div class="content ml-5">
+          <ul class="content-list"> 
+          </ul>
+         </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
